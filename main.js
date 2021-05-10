@@ -112,3 +112,14 @@ for (var i = 0; i < longerZucchine.length; i++) {
     longerWeight += longerZucchine[i].peso;
 }
 console.log("il peso delle zucchine più lunghe è: "+ longerWeight);
+
+/* Snack 3:
+Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
+ */
+
+function reverseMe(word) {
+    word.split("").reverse();
+    console.log(word.split("").reverse().join(""));
+}
+
+reverseMe("Ciao");
