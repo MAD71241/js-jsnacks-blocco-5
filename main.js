@@ -161,3 +161,21 @@ function arrayMerge(arr1, arr2) {
 }
 
 console.log(arrayMerge(firstArray, secondArray));
+
+/* Snack 5:
+Scrivi una funzione che accetti tre argomenti:
+un array e due numeri (“a” più piccolo di “b” e “b” grande al massimo quanto il numero di elementi dell’array).
+ */
+
+function arrayGen (arr, num1, num2) {
+    var generatedArr = [];
+    for (var i = num1; num1 < num2; num1++) {
+        generatedArr.push(arr[num1]);
+    }
+    console.log(generatedArr);
+}
+
+var exampleArray = ["pippo", "pluto", "topolino", "paperina", "paperone", "paperoga"];
+
+//La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra “a” e “b”
+console.log(arrayGen(exampleArray, 1, 4));
