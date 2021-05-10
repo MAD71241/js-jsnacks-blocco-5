@@ -123,3 +123,41 @@ function reverseMe(word) {
 }
 
 reverseMe("Ciao");
+
+
+/*Snack 4:
+Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro
+es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+ */
+
+var firstArray = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+];
+
+var secondArray = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+];
+
+function arrayMerge(arr1, arr2) {
+    var merged = [];
+    for (var i = 0; i < arr1.length + arr2.length; i++) {
+        if (i % 2 === 0) {
+            merged.push(arr1[i/2]);
+        } else {
+            merged.push(arr2[(i-1)/2]);
+        }
+    }
+    console.log(merged);
+}
+
+console.log(arrayMerge(firstArray, secondArray));
