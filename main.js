@@ -118,7 +118,6 @@ Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (
  */
 
 function reverseMe(word) {
-    word.split("").reverse();
     console.log(word.split("").reverse().join(""));
 }
 
