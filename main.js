@@ -159,7 +159,7 @@ function arrayMerge(arr1, arr2) {
     console.log(merged);
 }
 
-console.log(arrayMerge(firstArray, secondArray));
+arrayMerge(firstArray, secondArray);
 
 /* Snack 5:
 Scrivi una funzione che accetti tre argomenti:
@@ -177,4 +177,4 @@ function arrayGen (arr, num1, num2) {
 var exampleArray = ["pippo", "pluto", "topolino", "paperina", "paperone", "paperoga"];
 
 //La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra “a” e “b”
-console.log(arrayGen(exampleArray, 1, 4));
+arrayGen(exampleArray, 1, 4);
